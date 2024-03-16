@@ -1,0 +1,89 @@
+/*font do login*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao+Looped:wght@100..900&display=swap');
+*{
+  margin:0px;
+  padding:0px;
+  border-sizing:border-box;
+}
+body{
+  display:grid;
+  place-items:center;
+  width:100%;
+  height:100vh;
+  font-family: "Noto Sans Lao Looped", sans-serif;
+  font-weight:500;
+} 
+.login{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  gap:10px;
+  width:100%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+}
+article{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+}
+input{
+  min-width:300px;
+  max-width:700px;
+  padding:12px 10px;
+  outline-color:gray;
+  background:#E9F0FE;
+  border:none;
+  border-bottom:solid .2px dimgray;
+}
+button{
+  min-width:300px;
+  max-width:800px;
+  padding:10px;
+  border:none;
+  background:#0F3FAB;
+  color:white;
+  font-weight:bold;
+}
+p:nth-child(1){
+  color:blue;
+}
+p:nth-child(3){
+  box-shadow:.3px .5px 1px gray;
+  padding:8px;
+  width:300px;
+}
+p:nth-child(3):hover{
+  box-shadow:.3px .5px 6px gray;
+  text-decoration:underline;
+}
+i{
+  text-decoration:underline;
+}
+.psw{
+  position:relative;
+  display:flex;
+  align-items:center;
+}
+.exibir{
+  display:none;
+  position:absolute;
+  right:0px;
+  padding:5px 5px;
+  color:blue;
+  font-weight:bold;
+}
+.active{
+  display:block;
+}
+.exibir > i{
+  text-decoration:none;
+  font-size:10pt;
+}
